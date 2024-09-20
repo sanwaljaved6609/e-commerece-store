@@ -1,0 +1,106 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 650px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+    margin-top: 80px;
+  }
+  
+  /* Overlay */
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 165, 0, 0.4); /* Orange shade with transparency */
+    background: linear-gradient(rgba(175, 131, 50, 0.4), rgba(141, 141, 32, 0.2)); /* Orange and Yellow gradient */
+    z-index: 0;
+  }
+  
+  .text-content {
+    text-align: center;
+    z-index: 1;
+  }
+
+  .text-content span{
+    color: orangered;
+  }
+  
+  .text-content h1 {
+    font-size: 84px;
+    margin: 0;
+  }
+  
+  .text-content h2 {
+    font-size: 56px;
+    margin: 10px 0;
+    white-space: nowrap;
+  }
+  
+  .typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 2px solid orange;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+  }
+  
+  .shop-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .shop-button:hover {
+    background-color: yellow;
+    transform: scale(1.05);
+  }
+  
+  .arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .arrow {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  

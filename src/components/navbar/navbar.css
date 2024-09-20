@@ -1,0 +1,156 @@
+/* Basic navbar styling */
+.navbar {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Distribute space between items */
+  background-color: #fff; /* Change this to match your theme if needed */
+  border-bottom: 2px solid #f5a623; /* Orange bottom border */
+  padding: 10px 20px;
+  position: fixed; /* Fix the navbar to the top */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for better visibility */
+}
+
+/* Logo styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e57a00;
+  margin-left: 30px;
+}
+
+/* Navigation links styling */
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 70px;
+}
+
+.nav-links li {
+  position: relative; /* Needed for positioning the line */
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 10px;
+  position: relative; /* Needed for positioning the line */
+}
+
+/* Hover effect for nav links */
+.nav-links a::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #f5a623; /* Orange underline */
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  opacity: 0; /* Initially hidden */
+}
+
+.nav-links a:hover::before {
+  width: 100%;
+  opacity: 1; /* Show the line on hover */
+}
+
+/* Navbar right section styling */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.login-button, .register-button {
+  margin-left: 15px;
+  background-color: #f5a623; /* Orange background */
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.login-button:hover, .register-button:hover {
+  background-color: #e57a00; /* Darker orange on hover */
+}
+
+/* Cart icon styling */
+.cart-icon {
+  font-size: 30px;
+  color: #e57a00;
+  padding: 5px;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.cart-icon:hover {
+  color: #f5a623; /* Change color on hover */
+}
+
+/* Search bar styling */
+.search-bar {
+  margin: 0px 0 10px 140px;
+  align-items: center; /* Center items vertically */
+  width: 100%;
+}
+
+.search-bar input {
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ddd;
+  width: 350px; 
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+}
+
+.search-bar input:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 8px rgba(245, 166, 35, 0.8); /* Orange glow effect */
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #ddd;
+  background-color: #f5a623; /* Orange background */
+  color: #fff;
+  cursor: pointer;
+  width: 110px;
+}
+
+.search-bar button:hover {
+  background-color: rgb(255, 182, 105);
+  color: white;
+  border: 1px solid orange;
+}
+
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.logout-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: darkred;
+}
+

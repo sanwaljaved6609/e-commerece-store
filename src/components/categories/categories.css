@@ -1,0 +1,46 @@
+.categories-section {
+    padding: 40px 20px;
+    background: linear-gradient(180deg, orange, white);
+    text-align: center;
+  }
+  
+  .categories-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  color: white;  
+  }
+  
+  .categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .category-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px; /* Adjust width as needed */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category-image {
+    height: 150px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .category-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333; /* Dark text color for contrast */
+  }
+  

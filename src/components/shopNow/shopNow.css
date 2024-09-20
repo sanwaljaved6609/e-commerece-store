@@ -1,0 +1,83 @@
+.all-products-page {
+    padding: 20px;
+  }
+  
+  .banner {
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 165, 0, 0.3)), /* Light gradient overlay */
+    url('https://t4.ftcdn.net/jpg/03/20/46/13/360_F_320461388_5Snqf6f2tRIqiWlaIzNWrCUm1Ocaqhfm.jpg') no-repeat center center/cover;
+  
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 20px;
+    height: 350px;
+  }
+  
+  .banner h1 {
+    font-size: 68px;
+    color: #f5eada;
+    margin-top: 100px;
+    font-weight: 800;
+  }
+
+  .banner p{
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .banner h1 span{
+    color: #f39a0b;
+  }
+  
+  .filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-section input,
+  .filter-section select {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .filter-section button {
+    padding: 10px 20px;
+    background-color: #f5a623;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .product-grids {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .product-cards {
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .product-cards .product-images {
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+  
+  .product-cards h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .product-cards .original-prices {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
